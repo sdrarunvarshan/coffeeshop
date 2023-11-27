@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageCoffee"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/mocha"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textCoffeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee Name"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="HardcodedText"
+        android:layout_below="@id/imageCoffee"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:layout_below="@id/textCoffeeName"
+        android:layout_marginTop="8dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:layout_below="@id/buttonOrder"
+        android:layout_marginTop="8dp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
